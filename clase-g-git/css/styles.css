@@ -1,1 +1,101 @@
+*{
+    background-color: black;
+     
+}
+
 /* Mobile */
+
+
+
+
+
+
+/*Peliculas Populares*/
+.tira.uno{
+    position: relative;
+}
+
+.titulo1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.articlepopulares{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    color: white;
+   
+}
+
+
+.contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    
+    
+}
+
+
+
+.peliculas{
+    width: 100%;
+    
+    display: flex;
+}
+
+.art-peli{
+    min-width: 38%;
+    max-width: 38%;
+   height: 280px;
+    box-shadow: 5px 5px 5px black;
+    margin: 20px;
+}
+
+
+
+.peli{
+    border-color: black;
+    border-style: double;
+   background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.peli img{
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
+    
+}
+
+.peli h3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    max-height: 80px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    background-color: white;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
