@@ -1,0 +1,128 @@
+/*Generales*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(18, 19, 31);
+    color: rgb(213, 211, 211);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(213, 211, 211)
+}
+
+/*Header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 2.5%;
+
+}
+
+header img{
+    width: 30%;
+    margin: 0 4px 0 0;
+}
+
+header a{
+    margin-left: 2.5%;
+}
+
+
+/*Pagina Principal*/
+main{
+    width: 95vw;
+    margin: auto;
+    color: black;
+    background-color: black;
+    border-radius: 8px;
+    padding-bottom: 2px;
+}
+
+main a{
+    color: black;
+}
+
+.portada {
+    padding-top: 2.5%;
+}
+img {
+    width: 95%;
+    display: block;
+    margin: 0px auto;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.info {
+    background-color: rgb(191, 187, 187);
+    border-radius: 8px;
+    width: 95%;
+    margin: 1.5% auto;
+    padding: 1.5%;
+}
+
+.clasificacion {
+    display: inline-block;
+    border: 0.5px dashed black;
+    font-weight: 600;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.detalles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.detalles li{
+    margin-right: 1.5%;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+.sinopsis{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.favorites{
+    display: flex;
+    justify-content: right;
+}
+
+@media(min-width: 1024px){
+
+main {
+    width: 60%;
+}
+}
