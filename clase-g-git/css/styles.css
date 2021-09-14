@@ -1,7 +1,8 @@
 /* Mobile */
 *{
-    background-color: black;
-     
+    background-color:rgb(18, 19, 31);
+    color: rgb(213, 211, 211);
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;  
 }
 
 .titulo1{
@@ -29,7 +30,7 @@
     width: 100%;
 }
 .art-peli {
-    background-color: white;
+    background-color:white;
     display: grid;
     gap: 10px;
     height: 300px;
@@ -58,19 +59,52 @@
     color: black;
     font-size: 18px;
     background-color: white;
-    font-family: 'Kaisei HarunoUmi', serif;
+    
+}
+
+.participantes{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 2.5%;
+    
+
+}
+
+footer img{
+    width: 80px;
+}
+
+.moovify{
+    margin-left: 20%;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.fondo{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    color:grey;
 }
 /* Desktop */
 @media (min-width: 1024px){
     *{
         width: 100%;
     }
-    .peliculas{
-    
-        margin: 30px;
-        
+    .peliculas{   
+        margin: 30px;       
         display: grid;
         grid-template-columns: repeat(6,1fr);
         gap: 10px;
     }
+    footer img{
+        margin-right:200px
+    }
+
 }
