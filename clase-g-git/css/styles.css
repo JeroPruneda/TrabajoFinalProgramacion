@@ -11,7 +11,6 @@
 .articlepopulares{
     display: flex;
     align-items: center;
-    gap: 40px;
     width: 100%;
     color: white;
    
@@ -25,14 +24,13 @@
 .peliculas{   
    margin: 30px;    
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,48%);
     gap: 10px;
     width: 100%;
 }
 .art-peli {
     background-color:white;
     display: grid;
-    gap: 10px;
     height: 300px;
     width: 100%;
 }
@@ -46,21 +44,24 @@
     max-height: 200px;
     
 }
-.peli h3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    height: 100%;
-    max-height: 80px;
-    margin: 0;
-    text-decoration: none;
+.titulopeli{
+    margin: 0px;
     color: black;
-    font-size: 18px;
     background-color: white;
+    text-align:center;
+    font-size:15px;
+    margin-top:5px;
+    font-weight:bold;
+
+}
+.fecha{
+    margin: 0px;
+    color: black;
+    background-color: white;
+    text-align:center;
     
 }
+
 
 .participantes{
     color: white;
@@ -100,11 +101,16 @@ footer img{
     .peliculas{   
         margin: 30px;       
         display: grid;
-        grid-template-columns: repeat(6,1fr);
-        gap: 10px;
+        grid-template-columns: repeat(6,16%);
+        margin-right:50px;
+        margin-left:50px;
     }
     footer img{
         margin-right:200px
     }
+    .titulopeli{
+        font-size:17px
+    }
+    
 
 }
