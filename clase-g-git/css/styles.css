@@ -1,9 +1,40 @@
 /* Mobile */
-*{
+body{
     background-color:rgb(18, 19, 31);
     color: rgb(213, 211, 211);
     font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;  
+    
 }
+/*Header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.5%;
+    align-items: center;
+    
+}
+
+header input {
+    width: 20vw;
+    margin-left: 2.5vw;
+}
+
+header img{
+    width: 15%;
+    height: auto;
+    border-radius: 8px;
+}
+
+header a{
+    font-size: 100%;
+    margin-left: 2.5%;
+    color: rgb(213, 211, 211);
+    text-decoration: none;
+}
+
+
+
 
 .titulo1{
     text-align: center;
@@ -100,8 +131,8 @@ footer img{
 }
 .p-favorites{
        text-align:center;
-       margin-top:50px;
-       margin-bottom:50px;
+       margin-top:70px;
+       margin-bottom:90px;
        color:gray;
    }
 .favoritostitulo{
