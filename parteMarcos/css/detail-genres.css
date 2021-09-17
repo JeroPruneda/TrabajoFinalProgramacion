@@ -8,7 +8,7 @@
     text-align: center;
 }
 .articlegeneros{
-    display: flex;
+
     align-items: center;
     width: 100%;
     font-size: 25px;
@@ -22,21 +22,18 @@
 }
 
 .peliculas{   
-    margin: 10px;    
+    margin: 40px;    
     display: grid;
     grid-template-columns: repeat(2,48%);
     gap: 10px;
     width: 100%;
+    margin-left: 60px;
+    margin-right:0px;
 }
 .art-pelicula {
 
-    display: grid;
     height: 300px;
     width: 90%;
-}
-.pelicula{
-    border-color: black;
-
 }
 
 .pelicula img{
@@ -82,5 +79,17 @@ footer img{
     font-size: 15px;
     text-align: center;
     color:grey;
+}
+
+
+@media (min-width:1024px){
+    
+    .peliculas{
+        
+    margin-left: 150px;
+    margin-right:0px; 
+    
+    }
+
 }
 

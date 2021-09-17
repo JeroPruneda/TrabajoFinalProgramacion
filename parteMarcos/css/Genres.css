@@ -28,8 +28,10 @@
     margin: 10px;    
     display: grid;
     grid-template-columns: repeat(2,48%);
-    gap: 10px;
+    gap: 100px;
     width: 100%;
+    margin-left: 10px;
+    margin-right:40px;
 
 }
 
@@ -42,6 +44,7 @@
 
 .genero{
     text-align: center;
+    text-decoration: none;
 
 }
 
@@ -90,4 +93,19 @@ footer img{
     font-size: 15px;
     text-align: center;
     color:grey;
+}
+
+
+
+
+
+@media (min-width:1024px){
+    
+    .generospeliculas{
+        
+    margin-left: 60px;
+    margin-right:0px; 
+    
+    }
+
 }
