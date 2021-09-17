@@ -110,6 +110,7 @@ footer {
 
 footer img{
     width: 80px;
+    margin-left:7%;
 }
 
 .moovify{
@@ -153,7 +154,11 @@ footer img{
         margin-left:50px;
     }
     footer img{
-        margin-right:200px
+        margin-right:300px
+       
+    }
+    .moovify{
+        margin-left:300px;
     }
     .titulopeli{
         font-size:17px
