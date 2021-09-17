@@ -5,8 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Detalles de la Pelicula</title>
-        <link rel="stylesheet" href="./css/detail-movies.css">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="../css/detail-movies.css">
     </head>
 
     <body>
@@ -14,10 +13,10 @@
     <div class="main-container">
 
         <header>
-            <img src="../clase-g-git/img/logo.png.jpg" alt="logo">
-              <a href="../clase-g-git/html/home.html">HOME</a>
-            <a href="../clase-g-git/html/favorite.html">FAVORITOS</a>
-            <a href="../clase-g-git/html/genres.html">GÉNEROS</a>
+            <img src="../img/logo.png.jpg" alt="logo">
+              <a href="./home.html">HOME</a>
+            <a href="./favorite.html">FAVORITOS</a>
+            <a href="./genres.html">GÉNEROS</a>
             <form action="./search-results.html">
                 <input type="text" id="navegador">
             </form>
@@ -25,7 +24,7 @@
 
         <main>
            <div class="portada">
-                <img src="./img/shang-chi.jpg" alt="Portada de la Pelicula">
+                <img src="../img/shang-chi.jpg" alt="Portada de la Pelicula">
             </div>
             <div class="info">
                 <h1>Shang-Chi and the Legend of the Ten Rings</h1>                    
@@ -37,10 +36,11 @@
                 </ul>
                 <p class="rating">Rating: 8.5/10</p>
                 <p class="sinopsis">Shang-Chi y la Leyenda de los Diez Anillos de Marvel Studios está protagonizada por Simu Liu como Shang-Chi, quien debe enfrentarse al pasado que creía haber dejado atrás cuando se ve envuelto en la red de la misteriosa organización de los Diez Anillos.</p>
-                <form action="#" class="favorites">
-                    <input type="checkbox" name="favoritos" id="favoritos">
-                    <label for="favoritos" name="favoritos" id="favoritos">Añadir a Favoritos</label>
-                </form>
+                <a class="favoritos" href="../clase-g-git/html/favorite.html">
+                    <button>
+                        Añadir a Favoritos
+                    </button>
+                </a>
             </div>
         </main>
 
