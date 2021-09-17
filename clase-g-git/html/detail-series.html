@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Detalles de la Serie</title>
-        <link rel="stylesheet" href="./css/detail-series.css">
+        <link rel="stylesheet" href="../css/detail-series.css">
     </head>
 
     <body>
@@ -14,10 +14,9 @@
 
             <header>
                 <img src="../img/logo.png.jpg" alt="logo">
-                  <a href="../clase-g-git/html/home.html">HOME</a>
-                <a href="../clase-g-git/html/favorite.html">FAVORITOS</a>
-                <a href="../clase-g-git/html/genres.html">GÉNEROS</a>
-                <form action="./search-results.html">
+                <a href="./home.html">HOME</a>
+                <a href="./favorite.html">FAVORITOS</a>
+                <a href="./genres.html">GÉNEROS</a>
                     <input type="text" id="navegador">
                 </form>
             </header>
@@ -26,7 +25,7 @@
 
         <main>
                 <div class="portada">
-                    <img src="./img/breakingbad.jpg" alt="Portada de la Serie">
+                    <img src="../img/breakingbad.jpg" alt="Portada de la Serie">
                 </div>
                 <div class="info">
                     <h1>Breaking Bad</h1>
@@ -38,10 +37,11 @@
                     </ul>
                     <p class="rating">Rating: 9.5/10</p>
                     <p class="sinopsis">Un profesor de química con cáncer terminal se asocia con un exalumno suyo para fabricar y vender metanfetamina a fin de que su familia no pase apuros económicos. "Breaking Bad" obtuvo 16 premios Emmy, incluyendo cuatro al mejor actor en una serie dramática para Bryan Cranston.</p>
-                    <form action="#" class="favorites">
-                        <input type="checkbox" name="favoritos" id="favoritos">
-                        <label for="favoritos" name="favoritos" id="favoritos">Añadir a Favoritos</label>
-                    </form>
+                    <a class="favoritos" href="../clase-g-git/html/favorite.html">
+                        <button>
+                            Añadir a Favoritos
+                        </button>
+                    </a>
                 </div>
         </main>
 
