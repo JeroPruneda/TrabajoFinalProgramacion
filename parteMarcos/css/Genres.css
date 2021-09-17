@@ -1,8 +1,6 @@
 *{
     background-color:rgb(18, 19, 31);
-
     color: rgb(213, 211, 211);
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -103,7 +101,7 @@ footer img{
     
     .generospeliculas{
         
-    margin-left: 60px;
+    margin-left: 70px;
     margin-right:0px; 
     
     }

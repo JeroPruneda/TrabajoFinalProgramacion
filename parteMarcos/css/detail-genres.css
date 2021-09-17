@@ -38,7 +38,7 @@
 
 .pelicula img{
     width: 100%;
-    height: 100%;
+    height: 150%;
     max-height: 200px;
     
 }
@@ -91,5 +91,15 @@ footer img{
     
     }
 
+.art-pelicula {
+
+    height: 350px;
+    width: 90%;
 }
 
+    .pelicula img{
+    width: 100%;
+    height: 250%;
+    max-height: 250px;
+
+}
