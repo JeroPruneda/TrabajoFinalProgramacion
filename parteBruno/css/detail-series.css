@@ -27,20 +27,26 @@ a {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    margin-bottom: 2.5%;
+    justify-content: space-between;
+    margin: 2.5%;
+    align-items: center;
+}
 
+header input {
+    width: 20vw;
+    margin-left: 2.5vw;
 }
 
 header img{
-    width: 30%;
-    margin: 0 4px 0 0;
+    width: 15%;
+    height: auto;
+    border-radius: 8px;
 }
 
 header a{
+    font-size: 100%;
     margin-left: 2.5%;
 }
-
 
 /*Pagina Principal*/
 main{
