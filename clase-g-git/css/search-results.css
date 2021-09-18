@@ -152,6 +152,7 @@ header img {
     max-width: 150px;
 }
 
+/*Principal Responsive*/
 .resultados {
     flex-direction: row;
     justify-content: flex-start;
