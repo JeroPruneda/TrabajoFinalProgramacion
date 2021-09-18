@@ -98,15 +98,17 @@ header a{
 }
 
 
+/*Footer*/
 .participantes{
     color: white;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
 }
+
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 2.5%;
     
 
@@ -118,18 +120,18 @@ footer img{
 }
 
 .moovify{
-    margin-left: 20%;
     text-decoration: none;
     color: white;
     font-size: 30px;
 }
+
 .fondo{
     width: 100%;
     font-size: 15px;
     text-align: center;
     color:grey;
-    margin-bottom: 0px;
 }
+
 /* favorite */
 
 .h2-favorites{

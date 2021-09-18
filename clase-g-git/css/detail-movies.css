@@ -126,6 +126,41 @@ h2 {
     justify-content: right;
 }
 
+/*Footer*/
+.participantes{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2.5%;
+    
+
+}
+
+footer img{
+    width: 80px;
+    margin-left:7%;
+}
+
+.moovify{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.fondo{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    color:grey;
+}
+
+
 @media(min-width: 1024px){
 
 main {
