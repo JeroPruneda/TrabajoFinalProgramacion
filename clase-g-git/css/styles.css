@@ -43,7 +43,7 @@ header a{
     display: flex;
     align-items: center;
     width: 100%;
-    color: white;
+    
    
 }
 .primer-contenedor{
@@ -67,7 +67,6 @@ header a{
     text-decoration: none;
 }
 .peli{
-    border-color: black;
    background-color: white;
    text-decoration: none;
 }
@@ -99,14 +98,13 @@ header a{
 
 
 .participantes{
-    color: white;
+    
     text-align: center;
     font-size: 15px;
 }
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     margin-bottom: 2.5%;
     
 

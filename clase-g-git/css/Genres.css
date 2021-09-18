@@ -78,10 +78,13 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 2.5%;
+    
+
 }
 
 footer img{
     width: 80px;
+    margin-left:7%;
 }
 
 .moovify{
@@ -95,6 +98,7 @@ footer img{
     font-size: 15px;
     text-align: center;
     color:grey;
+    margin-bottom: 0px;
 }
 
 
@@ -118,5 +122,14 @@ footer img{
     .parrafo{
         font-size: 20px;
     }
-    
+    footer img{
+        margin-right:300px
+       
+    }
+    .moovify{
+        margin-left:300px;
+    }
+    .titulopeli{
+        font-size:17px
+    }
 }
