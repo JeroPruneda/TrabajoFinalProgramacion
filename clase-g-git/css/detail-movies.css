@@ -75,6 +75,10 @@ main a{
     margin: 0px auto;
 }
 
+.portada .imgLaptop{
+    display: none;
+}
+
 h1{
     display: flex;
     justify-content: center;
@@ -127,7 +131,7 @@ h2 {
 
 .favoritos{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 /*Footer*/
@@ -146,7 +150,8 @@ footer {
 
 footer img{
     width: 80px;
-    margin-left:7%;
+    margin-left: 20px;
+    border-radius: 8px;
 }
 
 .moovify{
@@ -181,4 +186,36 @@ header input {
 header img {
     max-width: 150px;
 }
+
+/*Principal Responsive*/
+main{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+.portada .imgMobile{
+    display: none;
+}
+
+.portada .imgLaptop{
+    display: block;
+}
+
+.portada {
+    background-color: black;
+    width: 60%;
+    padding: 2%;
+    border-radius: 8px;
+    margin-right: 2.5%;
+}
+
+.info{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 40px;
+}
+
 }
