@@ -20,6 +20,7 @@ header {
 header input {
     width: 20vw;
     margin-left: 2.5vw;
+    max-width: 200px;
 }
 
 header img{
