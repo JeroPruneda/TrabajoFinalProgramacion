@@ -4,6 +4,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*Header*/
 header {
     display: flex;
@@ -11,12 +15,12 @@ header {
     justify-content: space-between;
     margin: 2.5%;
     align-items: center;
-    
 }
 
 header input {
     width: 20vw;
     margin-left: 2.5vw;
+    max-width: 200px;
 }
 
 header img{
@@ -26,10 +30,9 @@ header img{
 }
 
 header a{
-    font-size: 100%;
+    font-size: 16px;
     margin-left: 2.5%;
-    color: rgb(213, 211, 211);
-    text-decoration: none;
+    font-weight: 500;
 }
 
 .titulo {
@@ -116,7 +119,6 @@ footer img{
     width: 80px;
     margin-left:7%;
 }
-
 .moovify{
     text-decoration: none;
     color: white;
@@ -136,6 +138,23 @@ footer img{
 
 @media (min-width:1024px){
     
+/*Header Responsive*/
+header {
+    margin-bottom: 5%;
+}
+
+header a{
+    font-size: 26px;
+}
+
+header input {
+    height: 20px;
+}
+
+header img {
+    max-width: 150px;
+}
+
     .titulo {
         text-align: center;
         font-size: 35px;

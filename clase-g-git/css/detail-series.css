@@ -35,6 +35,7 @@ header {
 header input {
     width: 20vw;
     margin-left: 2.5vw;
+    max-width: 200px;
 }
 
 header img{
@@ -44,8 +45,9 @@ header img{
 }
 
 header a{
-    font-size: 100%;
+    font-size: 16px;
     margin-left: 2.5%;
+    font-weight: 500;
 }
 
 /*Pagina Principal*/
@@ -56,44 +58,49 @@ main{
     background-color: black;
     border-radius: 8px;
     padding-bottom: 2px;
+    margin-bottom: 5%;
 }
 
 main a{
     color: black;
+    font-weight: 500;
 }
 
 .portada {
-    padding-top: 2.5%;
+    padding-top: 2.5%;  
 }
-img {
+
+
+.portada img {
     width: 95%;
     display: block;
     margin: 0px auto;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.portada .imgLaptop{
+    display: none;
 }
+
 
 .info {
     background-color: rgb(191, 187, 187);
     border-radius: 8px;
     width: 95%;
     margin: 1.5% auto;
-    padding: 1.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+h1 {
+    text-align: center;
+}
 .clasificacion {
-    display: inline-block;
+    height: fit-content;
     border: 0.5px dashed black;
     font-weight: 600;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
+    padding: 0 1px;
 }
 
 .detalles{
@@ -102,6 +109,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
+    width: 100%;
 }
 
 .detalles li{
@@ -109,21 +117,21 @@ h2 {
 }
 
 .rating{
-    display: flex;
-    justify-content: center;
     font-weight: 700;
 }
 
-
 .sinopsis{
-    display: flex;
-    justify-content: center;
     text-align: center;
 }
 
-.favoritos{
-    display: flex;
-    justify-content: right;
+.favoritos {
+    margin-bottom: 2.5%;
+}
+
+button{
+    background-color: black;
+    color: white;
+    margin-bottom: 5px;
 }
 .participantes{
     color: white;
@@ -170,13 +178,12 @@ footer {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 2.5%;
-    
-
 }
 
 footer img{
     width: 80px;
-    margin-left:7%;
+    margin-left: 20px;
+    border-radius: 8px;
 }
 
 .moovify{
@@ -192,10 +199,66 @@ footer img{
     color:grey;
 }
 
+
 @media(min-width: 1024px){
 
-main {
+/*Header Responsive*/
+header {
+    margin-bottom: 5%;
+}
+
+header a{
+    font-size: 26px;
+}
+
+header input {
+    height: 20px;
+}
+
+header img {
+    max-width: 150px;
+}
+
+/*Principal Responsive*/
+main{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+.portada .imgMobile{
+    display: none;
+}
+
+.portada .imgLaptop{
+    display: block;
+}
+
+.portada {
+    background-color: black;
     width: 60%;
+    padding: 2%;
+    border-radius: 8px;
+    margin-right: 2.5%;
+    max-width: fit-content;
+}
+
+.portada img{
+    max-width: 400px;
+}
+
+.info{
+    font-size: 20px;
+    max-height: 40%;
+    max-width: 60%;
+}   
+
+h1{
+    font-size: 40px;
+}
+
+.favoritos{
+    margin: 0
 }
 footer img{
     margin-right:300px
