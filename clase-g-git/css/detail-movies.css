@@ -126,6 +126,7 @@ h2 {
     justify-content: right;
 }
 
+
 .participantes{
     color: white;
     text-align: center;
@@ -135,9 +136,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 2.5%;
-    
-
 }
 
 footer img{
@@ -146,6 +144,7 @@ footer img{
 }
 
 .moovify{
+
     margin-left: 20%;
     text-decoration: none;
     color: white;
@@ -158,6 +157,7 @@ footer img{
     color:grey;
     margin-bottom: 0px;
 }
+
 @media(min-width: 1024px){
 
 main {

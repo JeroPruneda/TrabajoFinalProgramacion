@@ -4,6 +4,34 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*Header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.5%;
+    align-items: center;
+    
+}
+
+header input {
+    width: 20vw;
+    margin-left: 2.5vw;
+}
+
+header img{
+    width: 15%;
+    height: auto;
+    border-radius: 8px;
+}
+
+header a{
+    font-size: 100%;
+    margin-left: 2.5%;
+    color: rgb(213, 211, 211);
+    text-decoration: none;
+}
+
 .titulo {
     text-align: center;
     font-size: 17px;
@@ -68,15 +96,17 @@
 }
 
 
+/*Footer*/
 .participantes{
     color: white;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
 }
+
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 2.5%;
     
 
@@ -88,11 +118,11 @@ footer img{
 }
 
 .moovify{
-    margin-left: 20%;
     text-decoration: none;
     color: white;
     font-size: 30px;
 }
+
 .fondo{
     width: 100%;
     font-size: 15px;
@@ -100,7 +130,6 @@ footer img{
     color:grey;
     margin-bottom: 0px;
 }
-
 
 
 
