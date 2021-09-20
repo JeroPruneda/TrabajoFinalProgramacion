@@ -35,7 +35,7 @@ header {
 
 header input {
     width: 20vw;
-    max-width: 200px;
+    max-width: 208px;
 }
 
 header img{
@@ -46,6 +46,7 @@ header img{
 header a{
     font-size: 16px;
     font-weight: 500;
+    color: white;
 }
 
 /*Pagina Principal*/
@@ -144,7 +145,7 @@ header a{
 }
 
 header input {
-    height: 20px;
+    height: 26px;
 }
 
 header img {
