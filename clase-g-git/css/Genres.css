@@ -1,11 +1,13 @@
-*{
+/* Mobile */
+body{
     background-color:rgb(18, 19, 31);
     color: rgb(213, 211, 211);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;  
 }
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 /*Header*/
@@ -31,6 +33,8 @@ header a{
     font-size: 16px;
     font-weight: 500;
 }
+
+
 
 .titulo {
     text-align: center;
