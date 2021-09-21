@@ -173,7 +173,7 @@ header img {
 
     .peliculas{   
         margin: 30px;       
-        display: grid;
+        display: grid; 
         grid-template-columns: repeat(6,16%);
         margin-right:50px;
         margin-left:50px;
