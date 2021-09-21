@@ -1,11 +1,13 @@
-*{
+/* Mobile */
+body{
     background-color:rgb(18, 19, 31);
     color: rgb(213, 211, 211);
-    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif; 
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;  
 }
 
-a {
+a{
     text-decoration: none;
+    color: white;
 }
 
 /*Header*/
@@ -19,19 +21,16 @@ header {
 
 header input {
     width: 20vw;
-    margin-left: 2.5vw;
     max-width: 200px;
 }
 
 header img{
     width: 15%;
-    height: auto;
     border-radius: 8px;
 }
 
 header a{
     font-size: 16px;
-    margin-left: 2.5%;
     font-weight: 500;
 }
 

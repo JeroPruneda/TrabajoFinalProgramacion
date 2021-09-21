@@ -16,6 +16,7 @@ li {
 ul {
     margin: 0;
     border: 0;
+    padding: 0;
 }
 
 a {
@@ -34,20 +35,18 @@ header {
 
 header input {
     width: 20vw;
-    margin-left: 2.5vw;
-    max-width: 200px;
+    max-width: 208px;
 }
 
 header img{
     width: 15%;
-    height: auto;
     border-radius: 8px;
 }
 
 header a{
     font-size: 16px;
-    margin-left: 2.5%;
     font-weight: 500;
+    color: white;
 }
 
 /*Pagina Principal*/
@@ -74,13 +73,12 @@ main a{
 .portada img {
     width: 95%;
     display: block;
-    margin: 0px auto;
+    margin: auto;
 }
 
 .portada .imgLaptop{
     display: none;
 }
-
 
 .info {
     background-color: rgb(191, 187, 187);
@@ -96,11 +94,11 @@ main a{
 h1 {
     text-align: center;
 }
+
 .clasificacion {
     height: fit-content;
     border: 0.5px dashed black;
     font-weight: 600;
-    padding: 0 1px;
 }
 
 .detalles{
@@ -108,7 +106,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0;
+
     width: 100%;
 }
 
@@ -124,17 +122,13 @@ h1 {
     text-align: center;
 }
 
-.favoritos {
-    margin-bottom: 2.5%;
-}
-
 button{
     background-color: black;
     color: white;
     margin-bottom: 5px;
 }
 
-
+/*Footer*/
 .participantes{
     color: white;
     text-align: center;
@@ -155,8 +149,6 @@ footer img{
 }
 
 .moovify{
-
-    margin-left: 20%;
     text-decoration: none;
     color: white;
     font-size: 30px;
@@ -181,7 +173,7 @@ header a{
 }
 
 header input {
-    height: 20px;
+    height: 26px;
 }
 
 header img {
@@ -205,7 +197,7 @@ main{
 
 .portada {
     background-color: black;
-    width: 60%;
+    width: 40%;
     padding: 2%;
     border-radius: 8px;
     margin-right: 2.5%;
@@ -226,16 +218,6 @@ h1{
     font-size: 40px;
 }
 
-.favoritos{
-    margin: 0
-}
-footer img{
-    margin-right:300px
-   
-}
-.moovify{
-    margin-left:300px;
-}
 .titulopeli{
     font-size:17px
 }
