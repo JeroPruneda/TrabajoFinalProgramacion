@@ -6,7 +6,7 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=38d8aa65e8dac91d571
     .then(function(datos){
         console.log(datos);
       let generospeliculas = document.querySelector('.generospeliculas')
-    datos.genres.forEach(datos => {generospeliculas.innerHTML +=`<a  href="../html/detail-genres.html" class="titulogenero">${datos.name}</a>`
+    datos.genres.forEach(datos => {generospeliculas.innerHTML +=`<a  href="../html/detail-genres.html?id=${datos.id}&name=${datos.name}&categoria=pelicula" class="titulogenero">${datos.name}</a>`
         
     });        
     
@@ -23,7 +23,7 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=38d8aa65e8dac91d571
     .then(function(datos){
         console.log(datos);
       let generosseries = document.querySelector('.generosseries')
-    datos.genres.forEach(datos => {generosseries.innerHTML +=`<a  href="../html/detail-genres.html" class="titulogenero">${datos.name}</a>`
+    datos.genres.forEach(datos => {generosseries.innerHTML +=`<a  href="../html/detail-genres.html?id=${datos.id}&name=${datos.name}&categoria=serie" class="titulogenero">${datos.name}</a>`
         
     });        
     
