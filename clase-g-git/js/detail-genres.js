@@ -1,14 +1,18 @@
 window.addEventListener("load",function(){
+
     var querystring = location.search;
     var query2 = new URLSearchParams(querystring)
     var id = query2.get("id")
     let name = query2.get("name")
     let categoria = query2.get("categoria")
     if (categoria == "pelicula") {
+
         fetch(`https://api.themoviedb.org/3/discover/movie?api_key=38d8aa65e8dac91d5716d80acccd64eb&language=en-US&sort_by=popularity.desc&with_genres=${id}`)
+
         .then(function(respuesta){
             return respuesta.json()
         })
+
         .then(function(datos){
             console.log(datos);
           let articlegeneros = document.querySelector('.articlegeneros')
@@ -24,14 +28,19 @@ window.addEventListener("load",function(){
         });        
         
         })
+
         .catch(function(error){
             console.log(error);
         })  
-    } else {
+    } 
+    
+    else {
         fetch(`https://api.themoviedb.org/3/discover/tv?api_key=38d8aa65e8dac91d5716d80acccd64eb&language=en-US&sort_by=popularity.desc&with_genres=${id}`)
+
         .then(function(respuesta){
             return respuesta.json()
         })
+
         .then(function(datos){
             console.log(datos);
           let articlegeneros = document.querySelector('.articlegeneros')
@@ -42,9 +51,10 @@ window.addEventListener("load",function(){
         <p class="titulopelicula">${datos.name}</p> 
         </a>
         <br>
-    </article>`})
+        </article>`})
         
         })
+
         .catch(function(error){
             console.log(error);
         })   
