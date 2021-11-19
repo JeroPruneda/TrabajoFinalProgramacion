@@ -41,7 +41,7 @@ fetch (url)
 
         imgLaptop.src = `https://image.tmdb.org/t/p/w154/${data.poster_path}`
         imgLaptop.alt = data.title;
-        imgMobile.src = `https://image.tmdb.org/t/p/w154/${data.poster_path}`
+        imgMobile.src = `https://image.tmdb.org/t/p/w154/${data.backdrop_path}`
         imgMobile.alt = data.title
 
 
