@@ -1,5 +1,19 @@
 window.addEventListener("load",function(){
 
+//Validar Formularios
+let formulario = document.querySelector ('form')
+let inputField = document.querySelector ('#navegador')
+
+formulario.addEventListener ('submit', function (event) {
+    event.preventDefault()
+    if (inputField.value == "") {
+        alert('La busqueda no puede estar vacía')
+    } else if (inputField.value.length < 3) {
+        alert('El termino buscado debe tener al menos 3 caracteres')
+    } else {
+        this.submit ()
+    }
+})
 
 fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=38d8aa65e8dac91d5716d80acccd64eb&language=en-US`)
 

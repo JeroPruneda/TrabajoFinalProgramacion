@@ -1,5 +1,20 @@
 window.addEventListener("load",function(){
 
+//Validar Formularios
+let formulario = document.querySelector ('form')
+let inputField = document.querySelector ('#navegador')
+
+formulario.addEventListener ('submit', function (event) {
+    event.preventDefault()
+    if (inputField.value == "") {
+        alert('La busqueda no puede estar vacía')
+    } else if (inputField.value.length < 3) {
+        alert('El termino buscado debe tener al menos 3 caracteres')
+    } else {
+        this.submit ()
+    }
+})
+
     var querystring = location.search;
     var query2 = new URLSearchParams(querystring)
     var id = query2.get("id")

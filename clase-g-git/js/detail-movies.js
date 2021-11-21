@@ -1,3 +1,23 @@
+window.addEventListener ('load', function () {
+    
+
+
+//Validar Formularios
+let formulario = document.querySelector ('form')
+let inputField = document.querySelector ('#navegador')
+
+formulario.addEventListener ('submit', function (event) {
+    event.preventDefault()
+    if (inputField.value == "") {
+        alert('La busqueda no puede estar vacía')
+    } else if (inputField.value.length < 3) {
+        alert('El termino buscado debe tener al menos 3 caracteres')
+    } else {
+        this.submit ()
+    }
+})     
+
+
 let qs = location.search; //Obtengo la qs de la url
 let qtso = new URLSearchParams(qs); //Transformar la qs en un objeto literal
 let id = qtso.get('id'); //Obtener el dato de id del objeto literal
@@ -103,4 +123,5 @@ fav.addEventListener ('click', function (evento) {
     localStorage.setItem('peliculasFav', favsToStirng) //Guardo la info en el storage
 
 }) 
- 
+
+})

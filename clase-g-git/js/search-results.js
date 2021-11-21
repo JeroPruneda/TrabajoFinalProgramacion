@@ -1,4 +1,7 @@
-//Funciones buscador
+window.addEventListener ('load',function () {
+
+
+//Validar Formularios
 let formulario = document.querySelector ('form')
 let inputField = document.querySelector ('#navegador')
 
@@ -42,8 +45,8 @@ fetch (urlMovie)
         let resultadosDeBusquedaPeli = ''
         let pelisEncontradas = data.results
 
-        if (data.length == 0) {
-            resultado.innerText = `No se han encontrado peliculas ${search}` 
+        if (pelisEncontradas.length == 0) {
+            displayPeli.innerText = `No se han encontrado peliculas para: ${search}` 
         } else {
 
         //Uso un for para recorrer el array de resultados
@@ -77,8 +80,8 @@ fetch (urlSerie)
         let resultadosDeBusquedaSerie = ''
         let seriesEncontradas = data.results
 
-        if (data.length == 0) {
-            resultado.innerText = `No se han encontrado resultados para ${search}` 
+        if (seriesEncontradas.length == 0) {
+            displaySerie.innerText = `No se han encontrado series para: ${search}` 
         } else {
 
         //Uso un for para recorrer el array de resultados
@@ -98,3 +101,4 @@ fetch (urlSerie)
 
 })
  
+})

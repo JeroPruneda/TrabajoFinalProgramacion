@@ -9,7 +9,7 @@
     </head>
 
     <body>
-
+        
         <header>
             <img src="../img/logo.png.jpg" alt="logo">
             <a href="./home.html">HOME</a>
@@ -19,7 +19,9 @@
             <form action="./search-results.html" method="GET">
 
                <input type="text" id="navegador" name="search" value="" placeholder="Buscar por título">
-               <button type="submit">Buscar</button>
+               <button type="submit">
+                <i class="fas fa-search"></i>
+               </button>
 
             </form>
         </header>
@@ -27,22 +29,15 @@
         <main>
             <h2 class="conResultados">Resultados de busqueda para : </h2>
 
-            <div class="resultadosDeBusqueda">
-
-                <h3>Pelis</h3>
+                <h2>PELICULAS</h2>
                 <section class="resultadosPeli">
 
-                </section>
+                </section>              
 
-                <h3>Series</h3>
+                <h2>SERIES</h2>
                 <section class="resultadosSerie">
 
                 </section>
-            </div>
-
-
-        <script src="../js/search-results.js"></script>
-
         </main>
 
         <footer class="footer">
@@ -52,4 +47,7 @@
         <p class="fondo">Copyright © - Todos los derechos reservados</p> <br>
         <p class="participantes">Integrantes: Jeronimo Pruneda Paz, Bruno Gallo, Marcos Wilson</p>
 
+
+        <script src="../js/search-results.js"></script>
+        <script src="https://kit.fontawesome.com/986db7ec49.js" crossorigin="anonymous"></script>
     </body>

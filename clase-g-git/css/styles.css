@@ -19,7 +19,7 @@ header {
 }
 
 header input {
-    width: 20vw;
+    width: 60%;
     max-width: 200px;
 }
 
@@ -33,7 +33,19 @@ header a{
     font-weight: 500;
 }
 
+form {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 22.5vw;
+}
 
+form button {
+    margin-top: 4px;
+}
+
+/*Pagina Principal*/
 
 .titulo1{
     text-align: center;
@@ -175,6 +187,10 @@ header input {
 
 header img {
     max-width: 150px;
+}
+
+form button{
+    height: 26px;
 }
 
     .peliculas, .series ,.masvisto{   

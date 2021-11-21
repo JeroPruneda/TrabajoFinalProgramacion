@@ -29,10 +29,9 @@ header {
     align-items: center;
 }
 
-header .search {
-    width: 20vw;
+header input {
+    width: 60%;
     max-width: 200px;
-    display: block;
 }
 
 header img{
@@ -44,6 +43,18 @@ header a{
     font-size: 16px;
     font-weight: 500;
     color: white;
+}
+
+form {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 22.5vw;
+}
+
+form button {
+    margin-top: 4px;
 }
 
 /*Pagina Principal*/
@@ -63,7 +74,8 @@ main a{
 }
 
 .portada {
-    padding-top: 2.5%;  
+    padding-top: 2.5%;
+    display: flex;  
 }
 
 
@@ -119,7 +131,7 @@ h1 {
     text-align: center;
 }
 
-button{
+.botonFav{
     background-color: black;
     color: white;
     margin-bottom: 5px;
@@ -175,6 +187,10 @@ header input {
 
 header img {
     max-width: 150px;
+}
+
+form button{
+    height: 26px;
 }
 
 /*Principal Responsive*/
