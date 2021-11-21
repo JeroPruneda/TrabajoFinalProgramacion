@@ -12,47 +12,54 @@
 
         <header>
             <img src="../img/logo.png.jpg" alt="logo">
-                <a href="./home.html">HOME</a>
-                <a href="./favorite.html">FAVORITOS</a>
-                <a href="./genres.html">GÉNEROS</a>
-                <form action="./search-results.html">
-                    <input type="text" id="navegador" placeholder="Buscar por título">
+            <a href="./home.html">HOME</a>
+            <a href="./favorite.html">FAVORITOS</a>
+            <a href="./genres.html">GÉNEROS</a>
+
+            <form action="./search-results.html" method="GET">
+
+               <input type="text" id="navegador" name="search" value="" placeholder="Buscar por título">
+               <button type="submit">Buscar</button>
+
             </form>
         </header>
 
         <main>
-            <h2 class="conResultados">Resultados de busqueda para : Shang-Chi</h2>
+            <h2 class="conResultados">Resultados de busqueda para : </h2>
             <h2 class="sinResultados">No se encontro ningun resultado para esta busqueda</h2>
          
             <section class="resultados">
                 <article class="art-peli">
-                    <a href="./detail-movies.html" class="peli"><img src="../img/Atypical.jpg" alt="Atypical">
-                    <p class="titulopeli">Atypical</p>
-                    <p class="fecha">11 / 08 /2019</p>                       
+                    <a href="./detail-movies.html" class="peli"><img src="" alt="">
+                    <p class="titulopeli"></p>
+                    <p class="fecha"></p>                       
                     </a>
                 </article>
 
                 <article class="art-peli">
-                    <a href="./detail-movies.html" class="peli"><img src="../img/geminis.png.jpg" alt="Geminis">
-                    <p class="titulopeli">Geminis</p>
-                    <p class="fecha">11 / 10 / 2019</p>                       
+                    <a href="./detail-movies.html" class="peli"><img src="" alt="">
+                    <p class="titulopeli"></p>
+                    <p class="fecha"></p>                       
                     </a>
                 </article>
 
                 <article class="art-peli">
-                    <a href="./detail-movies.html" class="peli"><img src="../img/parasitos.jpg" alt="Parásitos">
-                    <p class="titulopeli">Parásitos</p>
-                    <p class="fecha">30 / 05 / 2019</p>                       
+                    <a href="./detail-movies.html" class="peli"><img src="" alt="">
+                    <p class="titulopeli"></p>
+                    <p class="fecha"></p>                       
                     </a>
                 </article>
 
                 <article class="art-peli">
-                    <a href="./detail-movies.html" class="peli"><img src="../img/luca.png" alt="Luca">
-                    <p class="titulopeli">Luca</p>
-                    <p class="fecha">18 / 06 / 2021</p>                       
+                    <a href="./detail-movies.html" class="peli"><img src="" alt="">
+                    <p class="titulopeli"></p>
+                    <p class="fecha"></p>                       
                     </a>
                 </article>
             </section>
+            
+            <script src="../js/search-results.js"></script>
+
         </main>
 
         <footer class="footer">

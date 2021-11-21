@@ -1,4 +1,4 @@
- /* //Peliculas favoritos
+/* //Peliculas favoritos
 //Recupero storage
 let recuperoStorage = localStorage.getItem('favoritos');
 
@@ -69,13 +69,17 @@ function buscarYMostarFavoritos(id){
             console.log(error);
         })
 
-} */
+}  */
 
 //Recupero storage
-let recuperoStorage = localStorage.getItem('peliculasFav');
+let recuperoStoragePeli = localStorage.getItem('peliculasFav');
+let recuperoStorageSerie = localStorage.getItem ('seriesFav')
 //y transformar de json en array
-let peliculasFav = JSON.parse(recuperoStorage);
+let peliculasFav = JSON.parse(recuperoStoragePeli);
 console.log(peliculasFav); 
+
+let seriesFav = JSON.parse (recuperoStorageSerie)
+console.log(seriesFav);
 
 
 //Capturar el contenedor de los elementos a mostar
@@ -122,10 +126,10 @@ function buscarYMostarFavoritos(id){
 
 }
 
-
-/* //Series favoritos
+/* 
+//Series favoritos
 //Recupero storage
-let recuperoStorage1 = localStorage.getItem('Seriesfavoritos');
+let recuperoStorage1 = localStorage.getItem('seriesFav');
 //y transformar de json en array
 let favoritos1 = JSON.parse(recuperoStorage1);
 console.log(favoritos1); 
@@ -173,8 +177,8 @@ function buscarYMostarFavoritos(id){
             console.log(error);
         })
 
-} */
-/* //Crear un array que iremos completando con datos.
+}
+//Crear un array que iremos completando con datos.
 let favoritos = [];
 
 //Recuperar storage
@@ -215,4 +219,5 @@ fav.addEventListener('click', function(evento){
     console.log(localStorage);
 
 })
+
  */

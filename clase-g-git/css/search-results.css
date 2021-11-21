@@ -45,6 +45,18 @@ header a{
     color: white;
 }
 
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 22.5vw;
+}
+
+form button {
+    margin-top: 4px;
+}
+
 /*Pagina Principal*/
 .sinResultados{
     display: none;

@@ -29,9 +29,10 @@ header {
     align-items: center;
 }
 
-header input {
+header .search {
     width: 20vw;
     max-width: 200px;
+    display: block;
 }
 
 header img{
