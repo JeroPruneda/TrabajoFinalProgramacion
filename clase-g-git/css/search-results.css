@@ -58,15 +58,18 @@ form button {
 }
 
 /*Pagina Principal*/
-.sinResultados{
-    display: none;
-}
-
 .conResultados {
     text-align: center;
 }
 
-.resultados {
+.resultadosPeli {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.resultadosSerie {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
