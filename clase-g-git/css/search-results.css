@@ -86,6 +86,7 @@ main{
     height: 300px;
     margin-bottom: 7.5%;
     max-width: 175px;
+    color: white;
 }
 .peli{
     border-color: black;

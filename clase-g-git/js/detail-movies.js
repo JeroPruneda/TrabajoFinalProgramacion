@@ -48,14 +48,15 @@ fetch (url)
         duration.innerText = `${data.runtime} minutes,`
         sinopsis.innerText = data.overview
 
-        let string = ''
-        for (let i = 0; i < data.genres.length; i++) {
-            const element = data.genres[i];
+        let listaGeneros = '' //Creo un String para ir rellenando
+
+        for (let i = 0; i < data.genres.length; i++) { //Creo un for para recorrer el array de generos
+            generos = data.genres[i];
             
-            string += `| <a href="./detail-genres.html?id=${element.id}&name=${element.name}&categoria=pelicula">${element.name}</a> | `
+            listaGeneros += `| <a href="./detail-genres.html?id=${generos.id}&name=${generos.name}&categoria=pelicula">${generos.name}</a> | ` //Por cada vuelta del for, se genera un anclaje que lleva a la pagina de detalle de genero
         }
 
-        genre.innerHTML = string
+        genre.innerHTML = listaGeneros //Actualizo el DOM
 
 
 
@@ -71,10 +72,6 @@ fetch (url)
     .catch (function (error) {
         console.log(error);
     })
-
-    //Backdrop para mobile, poster para laptop
-
-
  
 //Boton de Favoritos
 
@@ -91,7 +88,7 @@ if (recuperoStorage != null) { //Sucede si hay datos en el storage
 
 }
 
-//Capturo el elemento en el DOM
+//Capturo el generoso en el DOM
 let fav = document.querySelector ('.favoritos');
 let botonFav = document.querySelector ('.botonFav')
 
@@ -118,7 +115,7 @@ fav.addEventListener ('click', function (evento) {
 
     console.log(peliculasFav);
     //Guardo el array en el storage
-    let favsToStirng = JSON.stringify(peliculasFav); //Se transforma al array en una cadena de texto
+    let favsToStirng = JSON.listaGenerosify(peliculasFav); //Se transforma al array en una cadena de texto
     
     localStorage.setItem('peliculasFav', favsToStirng) //Guardo la info en el storage
 

@@ -21,11 +21,13 @@ formulario.addEventListener ('submit', function (event) {
 
 let qs = location.search //obtengo la qs de la url
 let qsto = new URLSearchParams (qs) //la transformo en un objeto literal
-let search = qsto.get('search')
+let search = qsto.get('search') //Obtengo el valor de search
 
 let resultado = document.querySelector ('.conResultados')
+let tituloPagina = document.querySelector ('title')
 
 resultado.innerText += ` ${search}`
+tituloPagina.innerHTML += `${search} - Moovify`
 
 //Busqueda
 let urlMovie = `https://api.themoviedb.org/3/search/movie?api_key=0002daaf86f106b6b8226fa0a789628f&language=en-US&page=1&include_adult=false&query=${search}`
@@ -40,7 +42,7 @@ fetch (urlMovie)
     .then (function (data) {
         console.log(data);
 
-        //Capturo DOM
+        //Capturo DOM y creo array para ir rellenando
         let displayPeli = document.querySelector ('.resultadosPeli')
         let resultadosDeBusquedaPeli = ''
         let pelisEncontradas = data.results
@@ -75,7 +77,7 @@ fetch (urlSerie)
     .then (function (data) {
         console.log(data);
 
-        //Capturo DOM
+        //Capturo DOM y creo array para ir rellenando
         let displaySerie = document.querySelector ('.resultadosSerie')
         let resultadosDeBusquedaSerie = ''
         let seriesEncontradas = data.results
@@ -88,9 +90,9 @@ fetch (urlSerie)
         for (let i = 0; i < 6; i++) {
             resultadosDeBusquedaSerie += 
                                         `<article class="art-peli">
-                                            <a class="peli" href="./detail-series.html?id=${seriesEncontradas[i].id}" > 
+                                            <a class="peli" href="./detail-series.html?id=${seriesEncontradas[i].id}">
                                                 <img src=https://image.tmdb.org/t/p/w154/${seriesEncontradas[i].poster_path} alt="${seriesEncontradas[i].name}">
-                                                <p class="titulopeli">${seriesEncontradas[i].name}</p>
+                                                <p class="titulopeli">${seriesEncontradas[i].name}</p>  
                                                 <p class="fecha">${seriesEncontradas[i].first_air_date}</p>
                                             </a>
                                          </article>`  
