@@ -115,7 +115,7 @@ fav.addEventListener ('click', function (evento) {
 
     console.log(peliculasFav);
     //Guardo el array en el storage
-    let favsToStirng = JSON.listaGenerosify(peliculasFav); //Se transforma al array en una cadena de texto
+    let favsToStirng = JSON.stringify(peliculasFav); //Se transforma al array en una cadena de texto
     
     localStorage.setItem('peliculasFav', favsToStirng) //Guardo la info en el storage
 
