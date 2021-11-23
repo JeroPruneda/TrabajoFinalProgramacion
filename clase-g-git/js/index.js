@@ -9,7 +9,7 @@ fetch(urlSeries)
     .then(function(data){
         console.log(data.results); //Mostrame por consola.
         let info = data.results; //Array de datos que vino de la API
-        //Paso1: capturar elemento del DOM
+        //Paso1: capturar elemento del DOMq
         let series = document.querySelector('.series');
         let elementosLista = ''
 

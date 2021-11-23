@@ -154,7 +154,13 @@ footer img{
 .primer-contendor{
     align-items: center;
 }
-
+.primer-contendor{
+    margin: 30px;    
+    display: grid;
+    grid-template-columns: repeat(2,48%);
+    gap: 10px;
+    width: 100%;
+}
 
 /* Desktop */
 @media (min-width: 1024px){
