@@ -1,19 +1,4 @@
-//Validar Formularios
-let formulario = document.querySelector ('form')
-let inputField = document.querySelector ('#navegador')
-
-formulario.addEventListener ('submit', function (event) {
-    event.preventDefault()
-    if (inputField.value == "") {
-        alert('La busqueda no puede estar vacía')
-    } else if (inputField.value.length < 3) {
-        alert('El termino buscado debe tener al menos 3 caracteres')
-    } else {
-        this.submit ()
-    }
-}) 
- 
- //Series populares
+  //Series populares
   //let seriesPopulares = document.querySelector ('.seriespopulares')
 let urlSeries = "https://api.themoviedb.org/3/tv/popular?api_key=3e29fc479dc4e2ffecc7ae48fa6e551d&language=en-US&page=1 "
 
