@@ -48,7 +48,7 @@ fetch (url)
         releaseDate.innerText = `First Aired: ${data.first_air_date},`;
         numberOfEpisodes.innerText = `${data.number_of_episodes} episodes - ${data.number_of_seasons} seasons, `
         sinopsis.innerText = data.overview
-        tituloPagina.innerText = data.name
+        tituloPagina.innerText = `${data.name} - Moovify`
 
         let string = ''
         for (let i = 0; i < data.genres.length; i++) {
