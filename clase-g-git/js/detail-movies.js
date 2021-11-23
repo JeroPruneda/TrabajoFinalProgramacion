@@ -1,6 +1,28 @@
+window.addEventListener ('load', function () {
+    
+
+
+//Validar Formularios
+let formulario = document.querySelector ('form')
+let inputField = document.querySelector ('#navegador')
+
+formulario.addEventListener ('submit', function (event) {
+    event.preventDefault()
+    if (inputField.value == "") {
+        alert('La busqueda no puede estar vacía')
+    } else if (inputField.value.length < 3) {
+        alert('El termino buscado debe tener al menos 3 caracteres')
+    } else {
+        this.submit ()
+    }
+})     
+
+
 let qs = location.search; //Obtengo la qs de la url
-let qtso = new URLSearchParams(qs); //Transformar la qs en un objeto literal
-let id = qtso.get('id'); //Obtener el dato de id del objeto literal
+let qsto = new URLSearchParams(qs); //Transformar la qs en un objeto literal
+let id = qsto.get('id'); //Obtener el dato de id del objeto literal
+
+
 
 let url = `https://api.themoviedb.org/3/movie/${id}?api_key=0002daaf86f106b6b8226fa0a789628f&language=en-US`
 
@@ -20,6 +42,7 @@ fetch (url)
         let genre = document.querySelector ('.genero');
         let imgLaptop = document.querySelector ('.imgLaptop');
         let imgMobile = document.querySelector ('.imgMobile')
+        let tituloPagina = document.querySelector ('title')
 
         //Actualizo el DOM
         title.innerText = data.title;
@@ -27,15 +50,17 @@ fetch (url)
         releaseDate.innerText = `${data.release_date},`;
         duration.innerText = `${data.runtime} minutes,`
         sinopsis.innerText = data.overview
+        tituloPagina.innerText = `${data.title} - Moovify`
+        
+        let listaGeneros = '' //Creo un String para ir rellenando
 
-        let string = ''
-        for (let i = 0; i < data.genres.length; i++) {
-            const element = data.genres[i];
+        for (let i = 0; i < data.genres.length; i++) { //Creo un for para recorrer el array de generos
+            generos = data.genres[i];
             
-            string += `| <a href="./detail-genres.html?id=${element.id}&name=${element.name}&categoria=pelicula">${element.name}</a> | `
+            listaGeneros += `| <a href="./detail-genres.html?id=${generos.id}&name=${generos.name}&categoria=pelicula">${generos.name}</a> | ` //Por cada vuelta del for, se genera un anclaje que lleva a la pagina de detalle de genero
         }
 
-        genre.innerHTML = string
+        genre.innerHTML = listaGeneros //Actualizo el DOM
 
 
 
@@ -51,10 +76,6 @@ fetch (url)
     .catch (function (error) {
         console.log(error);
     })
-
-    //Backdrop para mobile, poster para laptop
-
-
  
 //Boton de Favoritos
 
@@ -71,7 +92,7 @@ if (recuperoStorage != null) { //Sucede si hay datos en el storage
 
 }
 
-//Capturo el elemento en el DOM
+//Capturo el generoso en el DOM
 let fav = document.querySelector ('.favoritos');
 let botonFav = document.querySelector ('.botonFav')
 
@@ -103,4 +124,5 @@ fav.addEventListener ('click', function (evento) {
     localStorage.setItem('peliculasFav', favsToStirng) //Guardo la info en el storage
 
 }) 
- 
+
+})

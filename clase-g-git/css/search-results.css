@@ -30,7 +30,7 @@ header {
 }
 
 header input {
-    width: 20vw;
+    width: 60%;
     max-width: 200px;
 }
 
@@ -47,7 +47,7 @@ header a{
 
 form {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     flex-wrap: wrap;
     width: 22.5vw;
@@ -58,27 +58,35 @@ form button {
 }
 
 /*Pagina Principal*/
-.sinResultados{
-    display: none;
+main{
+    margin-bottom: 40px;
 }
-
 .conResultados {
     text-align: center;
 }
 
-.resultados {
+.resultadosPeli {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+.resultadosSerie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 175px;
+}
+
 .art-peli {
     background-color:white;
-    width: 40%;
+    width: 30%;
     height: 300px;
     margin-bottom: 7.5%;
     max-width: 175px;
+    color: white;
 }
 .peli{
     border-color: black;
@@ -160,6 +168,10 @@ header img {
     max-width: 150px;
 }
 
+form button{
+    height: 26px;
+}
+
 /*Principal Responsive*/
 .resultados {
     flex-direction: row;
@@ -167,8 +179,4 @@ header img {
     margin-bottom: 3%;
 }
 
-.art-peli{
-    margin: 2% 2% 7.5% 2%;
 }
-
-    }

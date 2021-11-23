@@ -1,3 +1,23 @@
+window.addEventListener ('load', function () {
+    
+
+
+//Validar Formularios
+let formulario = document.querySelector ('form')
+let inputField = document.querySelector ('#navegador')
+
+formulario.addEventListener ('submit', function (event) {
+    event.preventDefault()
+    if (inputField.value == "") {
+        alert('La busqueda no puede estar vacía')
+    } else if (inputField.value.length < 3) {
+        alert('El termino buscado debe tener al menos 3 caracteres')
+    } else {
+        this.submit ()
+    }
+})
+
+
 let qs = location.search; //Obtengo la qs de la url
 let qtso = new URLSearchParams(qs); //Transformar la qs en un objeto literal
 let id = qtso.get('id'); //Obtener el dato de id del objeto literal
@@ -20,6 +40,7 @@ fetch (url)
         let genre = document.querySelector ('.genero');
         let imgLaptop = document.querySelector ('.imgLaptop');
         let imgMobile = document.querySelector ('.imgMobile')
+        let tituloPagina = document.querySelector ('title')
 
         //Actualizo el DOM
         title.innerText = data.name;
@@ -27,6 +48,7 @@ fetch (url)
         releaseDate.innerText = `First Aired: ${data.first_air_date},`;
         numberOfEpisodes.innerText = `${data.number_of_episodes} episodes - ${data.number_of_seasons} seasons, `
         sinopsis.innerText = data.overview
+        tituloPagina.innerText = data.name
 
         let string = ''
         for (let i = 0; i < data.genres.length; i++) {
@@ -102,4 +124,6 @@ fav.addEventListener ('click', function (evento) {
 
     console.log(seriesFav);
 
-}) 
+})
+ 
+})

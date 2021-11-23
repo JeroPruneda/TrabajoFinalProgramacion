@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resultados de Busqueda</title>
+        <title></title>
         <link rel="stylesheet" href="../css/search-results.css">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </head>
 
     <body>
-
+        
         <header>
             <img src="../img/logo.png.jpg" alt="logo">
             <a href="./home.html">HOME</a>
@@ -19,46 +20,39 @@
             <form action="./search-results.html" method="GET">
 
                <input type="text" id="navegador" name="search" value="" placeholder="Buscar por título">
-               <button type="submit">Buscar</button>
+               <button type="submit">
+                <i class="fas fa-search"></i>
+               </button>
 
             </form>
         </header>
 
         <main>
             <h2 class="conResultados">Resultados de busqueda para : </h2>
-            <h2 class="sinResultados">No se encontro ningun resultado para esta busqueda</h2>
-         
-            <section class="resultados">
-                <article class="art-peli">
-                    <a href="./detail-movies.html" class="peli"><img src="" alt="">
-                    <p class="titulopeli"></p>
-                    <p class="fecha"></p>                       
-                    </a>
-                </article>
 
-                <article class="art-peli">
-                    <a href="./detail-movies.html" class="peli"><img src="" alt="">
-                    <p class="titulopeli"></p>
-                    <p class="fecha"></p>                       
-                    </a>
-                </article>
-
-                <article class="art-peli">
-                    <a href="./detail-movies.html" class="peli"><img src="" alt="">
-                    <p class="titulopeli"></p>
-                    <p class="fecha"></p>                       
-                    </a>
-                </article>
-
-                <article class="art-peli">
-                    <a href="./detail-movies.html" class="peli"><img src="" alt="">
-                    <p class="titulopeli"></p>
-                    <p class="fecha"></p>                       
-                    </a>
-                </article>
-            </section>
+                <h2>PELICULAS</h2>
+                <section class="resultadosPeli">
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_8qRXn7.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                    
+                </section>              
+                
+                <h2>SERIES</h2>
+                <section class="resultadosSerie">
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_8qRXn7.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                    
+                </section>
+            </main>
+            
+            <footer class="footer">
+                <a class="moovify" href="#">Moovify</a>
+                <img src="../img/logo.png.jpg" alt="logo">    
+            </footer>
+            <p class="fondo">Copyright © - Todos los derechos reservados</p> <br>
+            <p class="participantes">Integrantes: Jeronimo Pruneda Paz, Bruno Gallo, Marcos Wilson</p>
+            
             
             <script src="../js/search-results.js"></script>
+<<<<<<< HEAD
 
         </main>
 
@@ -69,4 +63,7 @@
         <p class="fondo">Copyright © - Todos los derechos reservados</p> <br>
         <p class="participantes">Integrantes: Jeronimo Pruneda Paz, Bruno Gallo, Marcos Wilson</p>
 
+=======
+            <script src="https://kit.fontawesome.com/986db7ec49.js" crossorigin="anonymous"></script>
+>>>>>>> 9ef457525729f6a49988e2eb8fe584c6d281a5fe
     </body>

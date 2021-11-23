@@ -16,9 +16,14 @@
               <a href="../html/home.html">HOME</a>
               <a href="../html/favorite.html">FAVORITOS</a>
             <a href="../html/Genres.html">GÉNEROS</a>
-            <form action="./search-results.html">
-                <input type="text" id="navegador" placeholder="Buscar por título">
-            </form>
+            <form action="./search-results.html" method="GET">
+
+                <input type="text" id="navegador" name="search" value="" placeholder="Buscar por título">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+ 
+             </form>
         </header>
     </div>  
 
@@ -85,5 +90,6 @@
 <p class="fondo">Copyright © - Todos los derechos reservados</p> <br>
 <p class="participantes">Integrantes: Jeronimo Pruneda Paz, Bruno Gallo, Marcos Wilson</p>
 <script src="../js/favoritos.js"></script>
+<script src="https://kit.fontawesome.com/986db7ec49.js" crossorigin="anonymous"></script>
 </body>
 </html>

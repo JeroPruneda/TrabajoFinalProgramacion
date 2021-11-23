@@ -20,7 +20,7 @@ header {
 }
 
 header input {
-    width: 20vw;
+    width: 60%;
     max-width: 200px;
 }
 
@@ -33,6 +33,20 @@ header a{
     font-size: 16px;
     font-weight: 500;
 }
+
+form {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 22.5vw;
+}
+
+form button {
+    margin-top: 4px;
+}
+
+/*Pagina Principal*/
 
 
 
@@ -165,6 +179,10 @@ header input {
 
 header img {
     max-width: 150px;
+}
+
+form button{
+    height: 26px;
 }
 
     .titulo {
