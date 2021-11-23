@@ -40,6 +40,7 @@ fetch (url)
         let genre = document.querySelector ('.genero');
         let imgLaptop = document.querySelector ('.imgLaptop');
         let imgMobile = document.querySelector ('.imgMobile')
+        let tituloPagina = document.querySelector ('title')
 
         //Actualizo el DOM
         title.innerText = data.name;
@@ -47,6 +48,7 @@ fetch (url)
         releaseDate.innerText = `First Aired: ${data.first_air_date},`;
         numberOfEpisodes.innerText = `${data.number_of_episodes} episodes - ${data.number_of_seasons} seasons, `
         sinopsis.innerText = data.overview
+        tituloPagina.innerText = data.name
 
         let string = ''
         for (let i = 0; i < data.genres.length; i++) {

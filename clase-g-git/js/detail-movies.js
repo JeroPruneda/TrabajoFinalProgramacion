@@ -19,8 +19,10 @@ formulario.addEventListener ('submit', function (event) {
 
 
 let qs = location.search; //Obtengo la qs de la url
-let qtso = new URLSearchParams(qs); //Transformar la qs en un objeto literal
-let id = qtso.get('id'); //Obtener el dato de id del objeto literal
+let qsto = new URLSearchParams(qs); //Transformar la qs en un objeto literal
+let id = qsto.get('id'); //Obtener el dato de id del objeto literal
+
+
 
 let url = `https://api.themoviedb.org/3/movie/${id}?api_key=0002daaf86f106b6b8226fa0a789628f&language=en-US`
 
@@ -40,6 +42,7 @@ fetch (url)
         let genre = document.querySelector ('.genero');
         let imgLaptop = document.querySelector ('.imgLaptop');
         let imgMobile = document.querySelector ('.imgMobile')
+        let tituloPagina = document.querySelector ('title')
 
         //Actualizo el DOM
         title.innerText = data.title;
@@ -47,7 +50,8 @@ fetch (url)
         releaseDate.innerText = `${data.release_date},`;
         duration.innerText = `${data.runtime} minutes,`
         sinopsis.innerText = data.overview
-
+        tituloPagina.innerText = `${data.title} - Moovify`
+        
         let listaGeneros = '' //Creo un String para ir rellenando
 
         for (let i = 0; i < data.genres.length; i++) { //Creo un for para recorrer el array de generos

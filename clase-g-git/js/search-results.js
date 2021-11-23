@@ -27,7 +27,7 @@ let resultado = document.querySelector ('.conResultados')
 let tituloPagina = document.querySelector ('title')
 
 resultado.innerText += ` ${search}`
-tituloPagina.innerHTML += `${search} - Moovify`
+tituloPagina.innerText += `${search} - Moovify`
 
 //Busqueda
 let urlMovie = `https://api.themoviedb.org/3/search/movie?api_key=0002daaf86f106b6b8226fa0a789628f&language=en-US&page=1&include_adult=false&query=${search}`
