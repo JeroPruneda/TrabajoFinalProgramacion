@@ -148,6 +148,7 @@ footer {
     justify-content: flex-start;
     justify-content: center;
     margin-bottom: 2.5%;
+    align-items: center;
 }
 
 footer img{
