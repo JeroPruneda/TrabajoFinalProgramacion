@@ -23,7 +23,7 @@ let listadoSeries = ''
 
 //Creo un if por si los arrays estan vacios
 
-if (peliculasFav == null) {
+if (peliculasFav == null || peliculasFav.length == 0) {
     listaDePelisFavs.innerHTML = '<h3>No has agregado ninguna pelicula a favoritos</h3>'
 
     } else {
@@ -56,7 +56,7 @@ if (peliculasFav == null) {
         }
     }
 
-if (seriesFav == null) {
+if (seriesFav == null || seriesFav.length == 0) {
     listaDeSeriesFavs.innerHTML = '<h3>No has agregado ninguna serie a favoritos</h3>'
     
     } else {
