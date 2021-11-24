@@ -121,7 +121,7 @@ fav.addEventListener ('click', function (evento) {
     //Guardo el array en el storage
     let favsToStirng = JSON.stringify(peliculasFav); //Se transforma al array en una cadena de texto
     
-    localStorage.setItem('peliculasFav', favsToStirng) //Guardo la info en el storage
+    localStorage.setItem('peliculasFav', favsToStirng) //Guardo la info en el storage del navegador
 
 }) 
 
